@@ -11,7 +11,7 @@ export default function Home() {
   const items: TabsProps["items"] = [
     {
       key: "1",
-      label: <p className="font-bold text-lg px-6">Today's Task</p>,
+      label: <p className="font-bold text-lg px-6">Today&apos;s Task</p>,
       children: (
         <TaskHeader tasks={filterTasksByToday(tasks || [])} name={"Today's"} />
       ),

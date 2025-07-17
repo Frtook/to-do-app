@@ -6,8 +6,8 @@ type Props = {
   data: Task[] | undefined;
 };
 export default function TaskCard({ data }: Props) {
-  if (!data) return <Skeleton active />;
   const { mutate: updateComplete } = useCompletedTask();
+  if (!data) return <Skeleton active />;
   return (
     <div className="space-y-4">
       {data?.length === 0 && (
